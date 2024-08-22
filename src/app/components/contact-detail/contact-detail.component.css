@@ -1,0 +1,118 @@
+.contact-container {
+  min-height: 81.8vh;
+  background-color: #1a0f2e;
+  background-image: 
+    radial-gradient(ellipse at top, #2c1654, transparent),
+    radial-gradient(ellipse at bottom, #0f0a1e, transparent);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 100px rgba(0,0,0,0.5);
+}
+
+.section-title {
+  color: #e0d0ff;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 0 0 10px rgba(224,208,255,0.5);
+}
+
+.contact-card {
+  background: rgba(44, 22, 84, 0.3);
+  border-radius: 15px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(224,208,255,0.2);
+  max-width: 600px;
+  width: 100%;
+}
+
+.contact-details {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+}
+
+.contact-details td {
+  padding: 0.5rem;
+  color: #b8a9d9;
+  font-family: 'Lato', sans-serif;
+}
+
+.contact-details td:first-child {
+  width: 40px;
+  text-align: center;
+  
+}
+
+.contact-details td:nth-child(2) {
+  font-weight: bold;
+  color: #e0d0ff;
+  font-family: 'Playfair Display', serif;
+}
+
+.contact-details td:nth-child(3) {
+  color: #b8a9d9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+/*
+.contact-details td:nth-child(3):hover {
+  color: #e0d0ff;
+  text-shadow: 0 0 5px rgba(224,208,255,0.5);
+}
+*/
+
+.copyable {
+  cursor: pointer;
+  position: relative;
+}
+
+.copyable:hover {
+  color: #e0d0ff;
+  text-shadow: 0 0 5px rgba(224,208,255,0.5);
+}
+
+.copyable::after {
+  content: 'Copy';
+  position: absolute;
+  top: 8px;
+  right: 0;
+  background: rgba(224,208,255,0.2);
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.copyable:hover::after {
+  opacity: 1;
+}
+
+.copyable.copied::after {
+  content: 'Copied!';
+  background: rgba(100,255,100,0.2);
+}
+.contact-details i {
+  color: #e0d0ff;
+  font-size: 1.2rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .contact-card {
+    padding: 1.5rem;
+  }
+  
+  .contact-details td {
+    font-size: 0.9rem;
+  }
+}

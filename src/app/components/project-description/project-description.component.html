@@ -1,0 +1,21 @@
+<section class="project-page">
+  <h2 class="project-title">{{this.projectName}}</h2>
+  <div class="project-content">
+    <div *ngFor="let description of descriptions" class="content-block {{description.num}}">
+      <div class="image-container">
+        <img src="{{description.images.default_img}}" [class.fade]="description.show" alt="{{description.alt}}" class="project-image">
+        <div *ngIf="description.images.total > 1">
+          <span class="move-icon left" (click)="decrementImage(description)"></span>
+          <span class="move-icon right" (click)="incrementImage(description)"></span>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>{{description.text}}</p>
+      </div>
+    </div>
+    <div class="project-links">
+     <!-- <a href="#" class="btn">View Live</a> -->
+      <a href="{{projectCode}}" class="btn">View Code</a>
+    </div>
+  </div>
+</section>
