@@ -8,6 +8,7 @@ export const routes: Routes = [
     {path: "detail/:id", component: ProjectDescriptionComponent},
     {path: "contact", component: ContactDetailComponent},
     {path: "projects", component: GridCenterComponent},
+    {path: "about", component: IntroductionCenterComponent},
     {path: "", component: IntroductionCenterComponent},
     {path: "**", component: IntroductionCenterComponent}
 ];
