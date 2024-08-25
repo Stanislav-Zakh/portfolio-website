@@ -15,7 +15,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    box-shadow: inset 0 0 100px rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 var(--sh-100) rgba(0,0,0,0.5);
   }
   
   .intro-container h1 {
@@ -23,12 +23,12 @@
     font-size: calc(4vmin + 1.8vmax);
     margin-bottom: 2vh;
     font-family: 'Playfair Display', serif;
-    text-shadow: 0 0 calc(1vmin + 0.6vmax) rgba(224,208,255,0.7);
+    text-shadow: 0 0 var(--ft-10-6) rgba(224,208,255,0.7);
   }
   
   .intro-container p {
     color: #b8a9d9;
-    font-size: calc(1.6vmin + 0.5vmax);
+    font-size: var(--ft-16-5);
     max-width: calc(40vmin + 20vmax);
     line-height: 1.6;
     font-family: 'Lato', sans-serif;
@@ -59,9 +59,9 @@
   .text-link {
     color: #e0d0ff;
     font-family: 'Playfair Display', serif;
-    font-size: calc(1.6vmin + 0.5vmax);
+    font-size: var(--ft-16-5);
     text-decoration: none;
-    text-shadow: 0 0 calc(1.6vmin + 0.5vmax) rgba(224,208,255,0.7);
+    text-shadow: 0 0 var(--ft-16-5) rgba(224,208,255,0.7);
   }
 
   .text-link:hover {
