@@ -1,5 +1,10 @@
+:host {
+  flex: 10;
+}
+
+
 .project-page {
-  min-height: 100vh;
+  height: 100%;
   background-color: #1a0f2e;
   background-image: 
     radial-gradient(ellipse at top, #2c1654, transparent),
